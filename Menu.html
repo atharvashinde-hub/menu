@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .form-section {
+            width: 90%;
+            margin: 5px auto;
+            background-color: white;
+            padding: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        iframe {
+            margin-top: 20px;
+            width: 100%;
+            height: 1600px;
+            border: none;
+        }
+        .menu-buttons {
+            text-align: center;
+            margin: 20px;
+        }
+        .menu-buttons button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            margin: 5px;
+            font-size: 16px;
+        }
+        .menu-buttons button:hover {
+            background-color: #45a049;
+        }
+        .menu-section {
+            display: none; /* Initially hide the menu */
+            width: 80%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .menu-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 10px 0;
+        }
+        .menu-item img {
+            width: 250px;
+            height: 250px;
+            margin-right: 10px;
+        }
+        .menu-section.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to Our Cafe</h1>
+        <p>Order your favorite items online through the form below!</p>
+    </header>
+
+    <div class="menu-buttons">
+        <button onclick="showMenu('starters')">Starters</button>
+        <button onclick="showMenu('drinks')">Drinks</button>
+        <button onclick="showMenu('lightmeals')">Light Meals</button>
+    </div>
+
+    <!-- Starters Section -->
+    <div class="menu-section" id="starters">
+        <h2>Starters</h2>
+        <div class="menu-item">
+            <img src="Croissant.jpg" alt="Croissant">
+            <p>Croissant - $2.00</p>
+        </div>
+        <div class="menu-item">
+            <img src="blueberry_scone.jpg" alt="Blueberry Scone">
+            <p>Blueberry Scone - $2.75</p>
+        </div>
+        <div class="menu-item">
+            <img src="bagel_cream_cheese.jpg" alt="Bagel with Cream Cheese">
+            <p>Bagel with Cream Cheese - $3.00</p>
+        </div>
+        <!-- Add more starters here -->
+    </div>
+
+    <!-- Drinks Section -->
+    <div class="menu-section" id="drinks">
+        <h2>Drinks</h2>
+        <div class="menu-item">
+            <img src="americano.jpg" alt="Americano">
+            <p>Americano - $3.00</p>
+        </div>
+        <div class="menu-item">
+            <img src="cappuccino.jpg" alt="Cappuccino">
+            <p>Cappuccino - $3.50</p>
+        </div>
+        <div class="menu-item">
+            <img src="latte.jpg" alt="Latte">
+            <p>Latte - $4.00</p>
+        </div>
+        <!-- Add more drinks here -->
+    </div>
+
+    <!-- Light Meals Section -->
+    <div class="menu-section" id="lightmeals">
+        <h2>Light Meals</h2>
+        <div class="menu-item">
+            <img src="grilled_cheese.jpg" alt="Grilled Cheese Sandwich">
+            <p>Grilled Cheese Sandwich - $6.00</p>
+        </div>
+        <div class="menu-item">
+            <img src="turkey_club.jpg" alt="Turkey Club Sandwich">
+            <p>Turkey Club Sandwich - $7.50</p>
+        </div>
+        <div class="menu-item">
+            <img src="veggie_wrap.jpg" alt="Veggie Wrap">
+            <p>Veggie Wrap - $6.75</p>
+        </div>
+        <!-- Add more light meals here -->
+    </div>
+
+    <script>
+        function showMenu(menuId) {
+            // Hide all menu sections
+            const sections = document.querySelectorAll('.menu-section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+
+            // Show the selected section
+            document.getElementById(menuId).classList.add('active');
+        }
+    </script>
+
+    <div class="form-section">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe7QnbpiWM7u7MQpcLu8ZwUqoTWYOYQPekvXAgQvJpTDV_VmQ/viewform?embedded=true" width="640" height="1605" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </div>
+
+</body>
+</html>
