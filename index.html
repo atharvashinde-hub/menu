@@ -68,13 +68,32 @@
         .menu-section.active {
             display: block;
         }
+        /* Custom CSS for Google Form elements */
+        #ff-compose {
+            display: flex;
+            justify-content: center;
+        }
+        #ff-compose div, #ff-compose img, #ff-compose input, #ff-compose select, #ff-compose textarea {
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+        }
+        #ff-compose .quantumWizTextinputPaperinputInputArea, #ff-compose .quantumWizTextinputPapertextareaInput {
+            width: 100%;
+            max-width: 600px;
+            text-align: center;
+        }
+        #ff-compose img {
+            max-width: 100%;
+            height: auto;
+        }
     </style>
 </head>
 <body>
 
     <header>
         <h1>Welcome to Our Cafe</h1>
-        <p>Oder your favorite items online through the form below!</p>
+        <p>Order your favorite items online through the form below!</p>
     </header>
 
     <script>
@@ -92,7 +111,6 @@
 
     <div id="ff-compose"></div>
     <script async defer src="https://formfacade.com/include/115257922894955320308/form/1FAIpQLSe7QnbpiWM7u7MQpcLu8ZwUqoTWYOYQPekvXAgQvJpTDV_VmQ/classic.js?div=ff-compose"></script>
-
 
 </body>
 </html>
