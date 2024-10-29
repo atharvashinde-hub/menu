@@ -37,8 +37,19 @@
 
     <header>
         <h1>Welcome to Our Cafe</h1>
-        <p>Orer your favorite items online through the form below!</p>
+        <p>Order your favorite items online through the form below!</p>
     </header>
+    <script>
+        window.onload = function() {
+            const iframe = document.querySelector('.form-section iframe');
+            const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+    
+            // Wait until the iframe content has loaded
+            iframe.onload = () => {
+                iframeDoc.body.style.backgroundColor = '#D2B48C'; // Light tan
+            };
+        };
+    </script>
 
     <!-- Styled container around the Google Form -->
     <div class="form-section">
