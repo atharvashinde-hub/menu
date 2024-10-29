@@ -20,29 +20,12 @@
         .form-section {
             width: 90%;
             margin: 20px auto;
-            background-color: #D2B48C; /* Light tan */
+            background-color: #D2B48C; /* Light tan background */
             padding: 20px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
             border-radius: 10px;
         }
-        .menu-buttons {
-            text-align: center;
-            margin: 20px;
-        }
-        .menu-buttons button {
-            background-color: #8B5E3C; /* Lighter brown */
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            cursor: pointer;
-            margin: 5px;
-            font-size: 16px;
-        }
-        .menu-buttons button:hover {
-            background-color: #A67C52; /* Even lighter brown */
-        }
-        /* Make the iframe appear part of the form */
-        iframe {
+        .form-section iframe {
             width: 100%;
             height: 1600px;
             border: none;
@@ -54,12 +37,12 @@
 
     <header>
         <h1>Welcome to Our Cafe</h1>
-        <p>Order your favorite items online through the form below!</p>
+        <p>Orer your favorite items online through the form below!</p>
     </header>
 
-    <!-- Form container styled to match the website's theme -->
+    <!-- Styled container around the Google Form -->
     <div class="form-section">
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe7QnbpiWM7u7MQpcLu8ZwUqoTWYOYQPekvXAgQvJpTDV_VmQ/viewform?embedded=true"></iframe>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe7QnbpiWM7u7MQpcLu8ZwUqoTWYOYQPekvXAgQvJpTDV_VmQ/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
     </div>
 
 </body>
