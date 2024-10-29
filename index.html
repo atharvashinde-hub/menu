@@ -72,20 +72,40 @@
         #ff-compose {
             display: flex;
             justify-content: center;
+            background-color: #D2B48C; /* Tan background for wood-like effect */
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
         }
         #ff-compose div, #ff-compose img, #ff-compose input, #ff-compose select, #ff-compose textarea {
             margin: 0 auto;
             max-width: 600px;
             text-align: center;
         }
-        #ff-compose .quantumWizTextinputPaperinputInputArea, #ff-compose .quantumWizTextinputPapertextareaInput {
+        #ff-compose .quantumWizTextinputPaperinputInputArea, 
+        #ff-compose .quantumWizTextinputPapertextareaInput {
             width: 100%;
             max-width: 600px;
             text-align: center;
+            background-color: #F5DEB3; /* Light tan background for inputs */
+            border: 1px solid #8B5E3C; /* Lighter brown border */
+            color: #4B3A30; /* Darker text color */
         }
         #ff-compose img {
             max-width: 100%;
             height: auto;
+        }
+        #ff-compose button {
+            background-color: #8B5E3C;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        #ff-compose button:hover {
+            background-color: #A67C52;
         }
     </style>
 </head>
