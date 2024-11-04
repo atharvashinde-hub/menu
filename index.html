@@ -9,21 +9,23 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #fcfcfc;
+            background-color: #1c1c1c; /* Dark background */
+            color: #f4f4f4; /* Light gray text color */
         }
         header {
-            background-color: #6A4E3B; /* Dark brown */
-            color: white;
+            background-color: #333333; /* Dark gray */
+            color: #f4f4f4; /* Light gray text */
             padding: 10px;
             text-align: center;
         }
         .form-section {
             width: 90%;
             margin: 20px auto;
-            background-color: #D2B48C; /* Light tan background */
+            background-color: #2e2e2e; /* Medium gray */
             padding: 20px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
             border-radius: 10px;
+            color: #f4f4f4;
         }
         .form-section iframe {
             width: 100%;
@@ -43,10 +45,11 @@
         window.onload = function() {
             const iframe = document.querySelector('.form-section iframe');
             const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
-    
+
             // Wait until the iframe content has loaded
             iframe.onload = () => {
-                iframeDoc.body.style.backgroundColor = '#D2B48C'; // Light tan
+                iframeDoc.body.style.backgroundColor = '#2e2e2e'; // Medium gray for iframe background
+                iframeDoc.body.style.color = '#f4f4f4'; // Light gray text for iframe content
             };
         };
     </script>
